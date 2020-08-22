@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: blanchedalmond;
+}
+header {
+  font-size: 30px;
+}
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 10px;
+  font-size: 32px;
+  border: none;
+  background-color: #fff;
+}
+form button {
+  color: #4caf50;
+  background: #fff;
+  cursor: pointer;
+  transform: all 0.3s ease;
+}
+form button:hover {
+  background: #4caf50;
+  color: #fff;
+}
+.todoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todoList {
+  min-width: 30%;
+  list-style: none;
+}
+.todo {
+  margin: 10px;
+  background: #fff;
+  color: #000;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.todo li {
+  flex: 1;
+}
+.deleteButton,
+.completedButton {
+  background: rgb(241, 57, 24);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.completedButton {
+  background-color: #4caf50;
+}
+.todoItem {
+  padding: 0px 10px;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.Completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
